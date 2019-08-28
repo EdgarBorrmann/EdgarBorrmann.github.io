@@ -34,7 +34,7 @@ li a.active {
 }
 
 .column {
-	color: #4CAF50;
+	background-color: #4CAF50;
 	height: 500px;
 	width: 50%;
 }
