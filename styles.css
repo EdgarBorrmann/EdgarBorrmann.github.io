@@ -33,7 +33,7 @@ li a.active {
 	background-color: #4CAF50;
 }
 
-column {
+.column {
 	color: #4CAF50;
 	height: 200px;
 	width: 100%;
