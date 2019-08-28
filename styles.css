@@ -42,6 +42,8 @@ li a.active {
 .circle {
 	height: 80px;
 	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
 	background-color: #ffffff;
 	border-radius: 50%;
 	display: block;
