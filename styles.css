@@ -44,16 +44,17 @@ li a.active {
 	width: 300px;
 	margin: auto;
 	background-color: #ffffff;
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(0, 0, 0);
 	border-radius: 50%;
 	border-color: rgb(102, 102, 102);
 	display: block;
 }
 
 .circle:hover {
-	border-style: solid;
-	border-width: thin;
-	border-color: rgb(0, 0, 0);
 	box-shadow: 5px 5px 10px #888888;
+	display: block;
 }
 p.a {
 	font-family: Arial, Helvetica, sans-serif;
