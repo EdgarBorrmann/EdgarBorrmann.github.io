@@ -20,8 +20,8 @@ tl.to('.arrow-down', 0.2, {opacity: 1, y: 0}, 'seperate+=0.2');
 tl.to(quadrantItems[2], 0.15, {x: -5, y: 5}, 'seperate');
 tl.to('.arrow-left', 0.2, {opacity: 1, x: 0}, 'seperate+=0.2');
 
-cube.addEventListener('mouseenter', playTimeline);
-cube.addEventListener('mouseleave', reverseTimeline);
+cube.addEventListener("click", playTimeline);
+cube.addEventListener("click", reverseTimeline);
 
 function playTimeline(e) {
   e.stopPropagation();
