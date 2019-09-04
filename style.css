@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #3FB;
   text-align: center;
   line-height: 100vh;
 }
@@ -45,18 +44,6 @@ body {
   transition: 0.5s;
 }
 
-.foo::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 3px solid #FFF;
-  -webkit-transform-origin: 0 100%;
-}
-
-.foo::after {
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
-  -webkit-transform-origin: 100% 0%;
-}
-
 
 .bar::before {
   border-bottom: 3px solid #FFF;
@@ -68,18 +55,6 @@ body {
   border-top: 3px solid #FFF;
   border-right: 3px solid #FFF;
   -webkit-transform-origin: 0% 100%;
-}
-
-.curmudgeon::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 3px solid #FFF;
-  -webkit-transform-origin: 50% 50%;
-}
-
-.curmudgeon::after {
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
-  -webkit-transform-origin: 50% 50%;
 }
 
 .box:hover::after, .box:hover::before {
