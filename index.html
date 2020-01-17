@@ -1,32 +1,82 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bormann-Meilensteine</title>
-	<LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Hello, world!</title>
+</head>
 <body>
 
-	<div class="header">
-	  <img src="/images/borrmann_annerod_logo.png" alt="Titel" width="274px" height="89px">
-	</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Wiki</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">XML zu BMEcat<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<div class="col-md-12">
+    <h2>Quick-Start-Guide Katalogübertragung</h2>
+    <br>
+    <p>
+    <h5>Schritt 1: -> Generischer Export aus CX30</h5>
+    Falls Bilder exportiert werden sollen, kann man das hier auswählen. Wichtig: Kontrollieren, ob die XML-Datei
+    vollständig ist! Sind Bildpfade, Langtexte, etc. vorhanden?<br>
+    <br>
+    <h5>Schritt 2: -> Kontrolle der XML-Datei</h5>
+    Ab und zu kann es vorkommen, dass in Langtexten oder Merkmalen ein Text vorkommt, der in etwa so aussieht: "<35
+    Ohm". Dies führt dazu, dass das Programm nicht richtig funktioniert. Ein Leerzeichen zwischen "<" und "35" sorgt
+    für
+    Abhilfe.<br>
+    <br>
+    <h5>Schritt 3: -> Ausführen des Programms</h5>
+    Hier findet man das Programm: Borrmann GmbH & Co KG\E-Commerce - Dokumente\General\Klassifizierung\Converter<br>
+    Link:
+    https://borrmann365.sharepoint.com/:f:/s/Online-ShopScireum/EkCtA2xonWVLhziWMHr4ICQBNb5klzyj0HhvjXum8EM4Ag?e=C4LtLA<br>
+    Man startet das Programm durch Doppelklick auf die Datei "Borrmann-Suite.bat". Zuerst hat man die Wahl zwischen
+    der Konvertierung von XML-Dateien und dem Upgrade bzw. Downgrade von eCl@ss-Nummern. Wir klicken auf "XML zu
+    BMEcat".<br>
+    <br>
+    Danach geben wir im obersten Feld den Dateinamen der zu erstellenden BMEcat-Datei an. Bei einem Klick auf "Datei
+    auswählen" öffnet sich ein Fenster, in dem man die aus CX30 exportierte Datei auswählt. Ein Klick auf
+    "Zielverzeichnis auswählen" öffnet ein ähnliches Fenster, jedoch wählt man hier ein Verzeichnis bzw. Ordner, in
+    dem die BMEcat-Datei abgespeichert werden soll. Danach starten wir mit "Konvertierung starten" die Umwandlung in
+    BMEcat.<br>
+    <br>
+    Beispiel:<br>
+    Angenommen, wir erstellen eine BMEcat-Datei am 20.1.2020, geben als Name "Test" ein und wählen als Speicherort
+    den Desktop aus. Nach Abschluss der Konvertierung befindet sich auf dem Desktop ein Ordner mit dem Namen
+    "BMEcat_Test_2020-01-20". Innerhalb dieses Ordners befindet sich zum einen die BMEcat-Datei mit dem Namen
+    "BMEcat_Test.xml" und zum anderen Eine Datei Namens "log.txt". Sollte das Programm abstürzen, können sich hier
+    nützliche Informationen befinden.<br>
+    <br>
+    <h5>Schritt 4: -> Einspielung in MasterPIM</h5>
+    Wir importieren den Katalog wie jeden anderen Katalog auch.</p>
+</div>
 
-	<ul>
-	  <li><a class="active" href="https://edgarborrmann.github.io/index.html">Zeitleiste</a></li>
-	  <li><a href="https://edgarborrmann.github.io/Meilensteine.html">Meilensteine</a></li>
-	  <li><a href="#contact">Login</a></li>
-	  <li><a href="#about">About</a></li>
-	</ul>
-
-	<div class="column">
-		<div class="circle">
-			<p class="a" style="text-align: center; padding-top: 140px">PIM</p>
-		</div>
-	</div>
-	
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>
